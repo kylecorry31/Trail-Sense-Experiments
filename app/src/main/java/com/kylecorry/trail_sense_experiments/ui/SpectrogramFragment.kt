@@ -22,7 +22,7 @@ import kotlin.math.log10
 class SpectrogramFragment : BoundFragment<FragmentSpectrogramBinding>() {
 
     private val sampleRate = 44100
-    private val frequencyCutOff = 10000f
+    private val frequencyCutOff = 12000f
     private val fftSize = 4096
     private var historyLength = 50
 
