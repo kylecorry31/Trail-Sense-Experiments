@@ -1,7 +1,6 @@
 package com.kylecorry.trail_sense_experiments.ui
 
 import android.annotation.SuppressLint
-import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -22,10 +21,14 @@ import kotlin.math.log10
 @AndroidEntryPoint
 class SpectrogramFragment : BoundFragment<FragmentSpectrogramBinding>() {
 
-    private val microphone by lazy { Microphone(requireContext(), 44100) }
+    private val sampleRate = 44100
+    private val frequencyCutOff = 10000f
+    private val fftSize = 4096
+    private var historyLength = 50
 
-    private var history by state(emptyList<Float>())
-    private var spectogram: List<List<Float>> by state(emptyList())
+    // State
+    private var history by state(emptyList<Vector2>())
+    private var spectrogram: List<List<Float>> by state(emptyList())
     private var mostResonant by state<Float?>(null)
     private var mostResonantDb by state<Float?>(null)
 
@@ -33,17 +36,17 @@ class SpectrogramFragment : BoundFragment<FragmentSpectrogramBinding>() {
         LineChartLayer(emptyList(), Resources.androidTextColorPrimary(requireContext()))
     }
 
-    private val audioBuffer = ByteArray(4096)
-    private var historyLength = 50
+    private val audioBuffer = ByteArray(fftSize)
+    private val microphone by lazy { Microphone(requireContext(), sampleRate) }
 
     private val updateTimer = CoroutineTimer {
+        // TODO: Read as fast as possible and consume in a separate coroutine (skipping if busy or spinning up another coroutine?)
         val bytes = microphone.read(audioBuffer, 0, audioBuffer.size)
         if (bytes == audioBuffer.size) {
             val readings = pcm16BufferToFloat(audioBuffer).toList()
             updateFFT(readings)
         }
     }
-
 
     @SuppressLint("ClickableViewAccessibility", "MissingPermission")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -67,12 +70,10 @@ class SpectrogramFragment : BoundFragment<FragmentSpectrogramBinding>() {
         super.onUpdate()
 
         binding.chart.configureYAxis(minimum = -125f, maximum = 0f)
-        line.data = history.mapIndexed { index, value ->
-            Vector2(index.toFloat(), value)
-        }
+        line.data = history
 
         binding.spectogram.fftSize = audioBuffer.size
-        binding.spectogram.spectogram = spectogram
+        binding.spectogram.spectogram = spectrogram
 
         binding.toolbar.title.text = memo("mostResonant", mostResonant) {
             val f = mostResonant ?: return@memo ""
@@ -90,11 +91,6 @@ class SpectrogramFragment : BoundFragment<FragmentSpectrogramBinding>() {
         container: ViewGroup?
     ): FragmentSpectrogramBinding {
         return FragmentSpectrogramBinding.inflate(layoutInflater, container, false)
-    }
-
-    private fun fftDecibels(fft: List<Float>, isHalf: Boolean = false): List<Float> {
-        val offset = -20f * log10(fft.size.toFloat() * (if (isHalf) 2 else 1))
-        return fft.map { 20 * log10(it.coerceAtLeast(1e-10f)) + offset }
     }
 
     private fun fftDecibels(fftValue: Float, fftSize: Int): Float {
@@ -137,28 +133,38 @@ class SpectrogramFragment : BoundFragment<FragmentSpectrogramBinding>() {
         val fft =
             FrequencyAnalysis.fft(hanning, twiddle)
 
+        val maxIndex =
+            FrequencyAnalysis.getIndexFFT(frequencyCutOff, fft.size, sampleRate.toFloat())
+
         val frequencies = fft
-            .take(hanning.size / 2)
+            .subList(0, maxIndex)
             .map { it.magnitude }
 
-//        val cricket = FrequencyAnalysis.getMagnitudeOfFrequencyFFT(
-//            fft, 4850f, 44100f
-//        )
+        // Update the history
+        history = frequencies
+            .mapIndexed { index, value ->
+                Vector2(
+                    FrequencyAnalysis.getFrequencyFFT(
+                        index,
+                        fft.size,
+                        sampleRate.toFloat()
+                    ), fftDecibels(value, fft.size)
+                )
+            }
 
-        val maxIndex = FrequencyAnalysis.getIndexFFT(10000f, fft.size, 44100f)
-
-        history = fftDecibels(frequencies, true)
-        mostResonant = FrequencyAnalysis.getMostResonantFrequencyFFT(fft, 44100f)
+        // Update the most resonant frequency
+        mostResonant = FrequencyAnalysis.getMostResonantFrequencyFFT(fft, sampleRate.toFloat())
         mostResonantDb = mostResonant?.let {
             fftDecibels(
                 FrequencyAnalysis.getMagnitudeOfFrequencyFFT(
                     fft,
                     it,
-                    44100f
+                    sampleRate.toFloat()
                 ), fft.size
             )
         }
 
-        spectogram = (spectogram + listOf(frequencies.subList(0, maxIndex))).takeLast(historyLength)
+        // Update the spectrogram
+        spectrogram = (spectrogram + listOf(frequencies)).takeLast(historyLength)
     }
 }
