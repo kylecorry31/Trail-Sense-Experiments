@@ -88,3 +88,6 @@ lint/tmp/
 .idea/deploymentTargetDropDown.xml
 
 build-cache/
+
+survival-guide/images
+survival-guide/output
