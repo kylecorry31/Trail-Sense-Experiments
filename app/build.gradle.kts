@@ -87,6 +87,7 @@ dependencies {
     implementation(libs.androidx.legacy.support.v4)
     implementation(libs.androidx.lifecycle.service)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.webkit)
     implementation(libs.material)
     coreLibraryDesugaring(libs.desugar.jdk.libs)
 

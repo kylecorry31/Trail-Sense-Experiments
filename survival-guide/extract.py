@@ -9,8 +9,6 @@ import os
 doc = pymupdf.open('ARN12086_ATP 3-50x21 FINAL WEB 2.pdf')
 if not os.path.exists('output'):
     os.mkdir('output')
-if not os.path.exists('images'):
-    os.mkdir('images')
 
 html = ""
 
@@ -31,22 +29,27 @@ for i, image in enumerate(section_images):
 
 # Replace all images with webp images
 i = 0
+total_size = 0
 images = re.findall(r'(<img[^>]*src="[^"]*"[^>]*>)', html)
 for image in images:
     srcBase64 = re.search(r'data:image/png;base64,([^"]*)', image).group(1)
     # Base64 decode
     srcBytes = base64.b64decode(srcBase64)
     # Convert to webp
-    with open(f'images/{i}.png', 'wb') as f:
+    with open(f'output/{i}.png', 'wb') as f:
         f.write(srcBytes)
-    img = Image.open(f'images/{i}.png')
-    # TODO: Resize images to a smaller size
-    img.save(f'images/{i}.webp', 'WEBP', quality=10)
+    img = Image.open(f'output/{i}.png')
+    # TODO: Most images can be smaller / lower quality
+    img.thumbnail((1000, 400))
+    img.save(f'output/{i}.webp', 'WEBP', quality=20)
     img.close()
+    total_size += os.stat(f'output/{i}.webp').st_size
     # Delete the png
-    os.remove(f'images/{i}.png')
-    html = html.replace(image, f'<img src="images/{i}.webp" />')
+    os.remove(f'output/{i}.png')
+    html = html.replace(image, f'<img style="height: auto; width: 100%;" src="{i}.webp" />')
     i += 1
+
+print(f'Total size of images: {total_size / 1024} KB')
 
 with open('output/original.html', 'w') as f:
     f.write(html)
@@ -116,11 +119,15 @@ html = re.sub(r'</p>\n</div>\n<div id="page0">\n<p>([a-z])', r' \1', html)
 with open('output/guide.html', 'w') as f:
     f.write(html)
 
-markdown = md(html)
+total_size += os.stat('output/guide.html').st_size
 
-# Replace more than 2 newlines with 2 newlines
-markdown = '\n'.join([line.strip() if len(line.strip()) == 0 else line for line in markdown.splitlines()])
-markdown = re.sub(r'\n{3,}', '\n\n', markdown)
+# markdown = md(html)
 
-with open('output/guide.md', 'w') as f:
-    f.write(markdown)
+# # Replace more than 2 newlines with 2 newlines
+# markdown = '\n'.join([line.strip() if len(line.strip()) == 0 else line for line in markdown.splitlines()])
+# markdown = re.sub(r'\n{3,}', '\n\n', markdown)
+
+# with open('output/guide.md', 'w') as f:
+#     f.write(markdown)
+
+print(f'Total size: {total_size / 1024} KB')
