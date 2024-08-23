@@ -35,12 +35,15 @@ class SurvivalGuideFragment : BoundFragment<FragmentSurvivalGuideBinding>() {
             }
         }
 
+        // TODO: Add a way to find text in the webview
+        // TODO: Add a way to quickly navigate to a section in the webview
+
         // Disable settings
         binding.webView.settings.allowFileAccess = false
         binding.webView.settings.allowContentAccess = false
         binding.webView.settings.allowFileAccessFromFileURLs = false
         binding.webView.settings.allowUniversalAccessFromFileURLs = false
-
+        
         // It doesn't actually make a network request, this just makes it use the webview asset loader
         binding.webView.loadUrl("https://appassets.androidplatform.net/assets/survival_guide/guide.html")
     }

@@ -89,5 +89,6 @@ lint/tmp/
 
 build-cache/
 
-survival-guide/images
 survival-guide/output
+
+.kotlin/

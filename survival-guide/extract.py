@@ -113,8 +113,9 @@ html = re.sub(r'</p>\n</div>\n<div id="page0">\n<p>([a-z])', r' \1', html)
 
 # TODO: Remove empty paragraphs
 # TODO: Remove divs
-# TODO: Ensure each image is in its own paragraph
-# TODO: Ensure each element closes on the same line
+# TODO: Generate a table of contents with links to each section
+# TODO: Styling
+# TODO: Some list items are not formatted correctly (linebreaks)
 
 with open('output/guide.html', 'w') as f:
     f.write(html)
