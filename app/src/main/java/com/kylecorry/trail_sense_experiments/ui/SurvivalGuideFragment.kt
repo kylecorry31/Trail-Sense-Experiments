@@ -1,6 +1,7 @@
 package com.kylecorry.trail_sense_experiments.ui
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -43,7 +44,10 @@ class SurvivalGuideFragment : BoundFragment<FragmentSurvivalGuideBinding>() {
         binding.webView.settings.allowContentAccess = false
         binding.webView.settings.allowFileAccessFromFileURLs = false
         binding.webView.settings.allowUniversalAccessFromFileURLs = false
-        
+
+        // Set default background color of the webview
+        binding.webView.setBackgroundColor(Color.TRANSPARENT)
+
         // It doesn't actually make a network request, this just makes it use the webview asset loader
         binding.webView.loadUrl("https://appassets.androidplatform.net/assets/survival_guide/guide.html")
     }

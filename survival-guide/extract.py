@@ -46,7 +46,7 @@ for image in images:
     total_size += os.stat(f'output/{i}.webp').st_size
     # Delete the png
     os.remove(f'output/{i}.png')
-    html = html.replace(image, f'<img style="height: auto; width: 100%;" src="{i}.webp" />')
+    html = html.replace(image, f'<img src="{i}.webp" />')
     i += 1
 
 print(f'Total size of images: {total_size / 1024} KB')
@@ -61,8 +61,8 @@ html = html.replace('&#x14;&#x1b;&#x3;6HSWHPEHU&#x3;&#x15;&#x13;&#x14;&#x1b;', '
 
 # Set up the lists
 html = re.sub('<p>z (.*)</p>', r'<li>\1</li>', html)
-html = re.sub('(&#x83;.*?)(?=<)', r'<ul>\1</ul>', html)
-html = re.sub('&#x83;(.*?)(?=&#x83;|<)', r'<li>\1</li>', html)
+html = re.sub('(&#x83;.*?)(?=</[^b]+>)', r'<ul>\1</ul>', html)
+html = re.sub('&#x83;(.*?)(?=&#x83;|</[^b]+>)', r'<li>\1</li>', html)
 
 # Replace unsupported characters
 html = html.replace('&#x2019;', "'")
@@ -109,13 +109,40 @@ html = re.sub(r'<h3><b>(.*)</b></h3>', r'<h3>\1</h3>', html)
 
 # Restore broken paragraphs
 # TODO: Anything that isn't a <b>, - , or in the form ##-## should be part of the same paragraph. An image may also break a paragraph, so it should move up the sentence to be above the image.
-html = re.sub(r'</p>\n</div>\n<div id="page0">\n<p>([a-z])', r' \1', html)
+# html = re.sub(r'</p>\n</div>\n<div id="page0">\n<p>([a-z])', r' \1', html)
 
-# TODO: Remove empty paragraphs
-# TODO: Remove divs
+# Remove unnecessary tags
+html = re.sub(r'<p[^>]*>\s*</p>', '', html)
+html = re.sub(r'<div[^>]*>\s*</div>', '', html)
+# html = re.sub(r'</?div.*>', '', html)
+
+# Remove empty lines
+# html = re.sub(r'\n', '', html)
+
 # TODO: Generate a table of contents with links to each section
-# TODO: Styling
-# TODO: Some list items are not formatted correctly (linebreaks)
+# TODO: Delete images that aren't in the PDF
+
+html = """<head><style>
+html {
+    padding: 4px;
+    background-color: transparent;
+}
+* {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+div {
+    margin-bottom: 8px;
+    background: white;
+    padding: 24px;
+    min-height: 100vh;
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+</style></head>""" + html
 
 with open('output/guide.html', 'w') as f:
     f.write(html)
