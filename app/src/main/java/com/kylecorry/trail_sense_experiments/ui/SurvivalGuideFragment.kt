@@ -50,6 +50,10 @@ class SurvivalGuideFragment : BoundFragment<FragmentSurvivalGuideBinding>() {
 
         // It doesn't actually make a network request, this just makes it use the webview asset loader
         binding.webView.loadUrl("https://appassets.androidplatform.net/assets/survival_guide/guide.html")
+
+        binding.toolbar.leftButton.setOnClickListener {
+            binding.webView.loadUrl("https://appassets.androidplatform.net/assets/survival_guide/guide.html#chapter-2")
+        }
     }
 
     override fun generateBinding(
