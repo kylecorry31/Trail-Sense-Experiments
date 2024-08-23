@@ -40,6 +40,7 @@ for image in images:
     with open(f'images/{i}.png', 'wb') as f:
         f.write(srcBytes)
     img = Image.open(f'images/{i}.png')
+    # TODO: Resize images to a smaller size
     img.save(f'images/{i}.webp', 'WEBP', quality=10)
     img.close()
     # Delete the png
@@ -69,7 +70,7 @@ html = html.replace('&#xbc;', '1/4')
 html = html.replace('&#x201c;', '"')
 html = html.replace('&#x201d;', '"')
 # TODO: This isn't working in the markdown
-html = html.replace('&#xb0;', '°')
+html = html.replace('&#xb0;', '&deg;')
 html = html.replace('&#xe8;', 'è')
 html = html.replace('&#x3;', '')
 html = html.replace('This page intentionally left blank.', '')
@@ -106,6 +107,11 @@ html = re.sub(r'<h3><b>(.*)</b></h3>', r'<h3>\1</h3>', html)
 # Restore broken paragraphs
 # TODO: Anything that isn't a <b>, - , or in the form ##-## should be part of the same paragraph. An image may also break a paragraph, so it should move up the sentence to be above the image.
 html = re.sub(r'</p>\n</div>\n<div id="page0">\n<p>([a-z])', r' \1', html)
+
+# TODO: Remove empty paragraphs
+# TODO: Remove divs
+# TODO: Ensure each image is in its own paragraph
+# TODO: Ensure each element closes on the same line
 
 with open('output/guide.html', 'w') as f:
     f.write(html)

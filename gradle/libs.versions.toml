@@ -57,6 +57,7 @@ andromeda-fragments = { module = "com.github.kylecorry31.andromeda:fragments", v
 andromeda-list = { module = "com.github.kylecorry31.andromeda:list", version.ref = "andromedaVersion" }
 andromeda-pickers = { module = "com.github.kylecorry31.andromeda:pickers", version.ref = "andromedaVersion" }
 andromeda-notify = { module = "com.github.kylecorry31.andromeda:notify", version.ref = "andromedaVersion" }
+andromeda-markdown = { module = "com.github.kylecorry31.andromeda:markdown", version.ref = "andromedaVersion" }
 andromeda-permissions = { module = "com.github.kylecorry31.andromeda:permissions", version.ref = "andromedaVersion" }
 andromeda-preferences = { module = "com.github.kylecorry31.andromeda:preferences", version.ref = "andromedaVersion" }
 andromeda-views = { module = "com.github.kylecorry31.andromeda:views", version.ref = "andromedaVersion" }

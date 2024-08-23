@@ -13,4 +13,9 @@
         android:id="@+id/action_settings"
         android:name="com.kylecorry.trail_sense_experiments.ui.SettingsFragment"
         android:label="SettingsFragment" />
+
+    <fragment
+        android:id="@+id/fragmentSurvivalGuide"
+        android:name="com.kylecorry.trail_sense_experiments.ui.SurvivalGuideFragment"
+        android:label="SurvivalGuideFragment" />
 </navigation>

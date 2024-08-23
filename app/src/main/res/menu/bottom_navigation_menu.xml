@@ -10,6 +10,12 @@
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@+id/fragmentSurvivalGuide"
+        android:icon="@drawable/ic_info"
+        android:title="@string/survival_guide"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_settings"
         android:icon="@drawable/ic_settings"
         android:title="@string/settings"
