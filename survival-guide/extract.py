@@ -90,7 +90,7 @@ html = html.replace("&#x201c;", '"')
 html = html.replace("&#x201d;", '"')
 # TODO: This isn't working in the markdown
 html = html.replace("&#xb0;", "&deg;")
-html = html.replace("&#xe8;", "è")
+html = html.replace("&#xe8;", "&egrave;")
 html = html.replace("&#x3;", "")
 html = html.replace("This page intentionally left blank.", "")
 

@@ -52,6 +52,7 @@ class SurvivalGuideFragment : BoundFragment<FragmentSurvivalGuideBinding>() {
         binding.webView.loadUrl("https://appassets.androidplatform.net/assets/survival_guide/guide.html")
 
         binding.toolbar.leftButton.setOnClickListener {
+            // Experiment with navigating to a specific section
             binding.webView.loadUrl("https://appassets.androidplatform.net/assets/survival_guide/guide.html#chapter-2")
         }
     }
