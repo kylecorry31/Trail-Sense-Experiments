@@ -29,6 +29,8 @@ sol = "9.6.0"
 workRuntimeKtx = "2.9.0"
 preferenceKtx = "1.2.1"
 webkit = "1.8.0"
+markwonVersion = "4.6.2"
+markwonLinkifyVersion = "4.6.2"
 
 [libraries]
 androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
@@ -76,6 +78,9 @@ kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutine
 material = { module = "com.google.android.material:material", version.ref = "material" }
 mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlinVersion" }
 sol = { module = "com.github.kylecorry31:sol", version.ref = "sol" }
+markwon = { module = "io.noties.markwon:core", version.ref = "markwonVersion" }
+markwon-image = { module = "io.noties.markwon:image", version.ref = "markwonVersion" }
+markwon-linkify = { module = "io.noties.markwon:linkify", version.ref = "markwonLinkifyVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidApplication" }

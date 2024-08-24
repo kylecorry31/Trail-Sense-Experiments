@@ -90,6 +90,9 @@ dependencies {
     implementation(libs.androidx.webkit)
     implementation(libs.material)
     coreLibraryDesugaring(libs.desugar.jdk.libs)
+    implementation(libs.markwon)
+    implementation(libs.markwon.linkify)
+    implementation(libs.markwon.image)
 
     // Room
     ksp(libs.androidx.room.compiler)

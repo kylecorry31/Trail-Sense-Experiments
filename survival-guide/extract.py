@@ -119,21 +119,21 @@ html = html[html.find('<div id="page0">\n<h3><b>Chapter 1</b></h3>') :]
 # Remove everything below references
 html = html[: html.find('<div id="page0">\n<h2><b>References </b></h2>')]
 
-# Make chapter titles h1
+# Make chapter titles h2
 html = re.sub(
     r"<h3><b>(Chapter .+)</b></h3><h2><b>(.*)</b></h2>",
-    lambda m: f'<h1 id="{slugify(m.group(1))}">{m.group(1)}: {m.group(2)}</h1>',
+    lambda m: f'<h2 id="{slugify(m.group(1))}">{m.group(1)}: {m.group(2)}</h2>',
     html,
 )
 html = re.sub(
     r"<h3><b>(Appendix .+)</b></h3><h2><b>(.*)</b></h2>",
-    lambda m: f'<h1 id="{slugify(m.group(1))}">{m.group(1)}: {m.group(2)}</h1>',
+    lambda m: f'<h2 id="{slugify(m.group(1))}">{m.group(1)}: {m.group(2)}</h2>',
     html,
 )
 
-# Remove unneeded bold tags and upgrade h2 to h1
+# Remove unneeded bold tags
 # TODO: Generate IDs
-html = re.sub(r"<h2><b>(.*)</b></h2>", r"<h1>\1</h1>", html)
+html = re.sub(r"<h2><b>(.*)</b></h2>", r"<h2>\1</h2>", html)
 html = re.sub(r"<h3><b>(.*)</b></h3>", r"<h3>\1</h3>", html)
 
 # Restore broken paragraphs
@@ -175,26 +175,26 @@ div {
 
 # Split by chapter
 actual_chapters = []
-chapters = re.split(r'<div id="page0">\n<h1 id="chapter-\d+">', html)
+chapters = re.split(r'<div id="page0">\n<h2 id="chapter-\d+">', html)
 for i, chapter in enumerate(chapters):
     if i == 0:
         continue
-    actual_chapters.append(f"<div id=\"page0\">\n<h1 id=\"chapter-{i}\">" + chapter)
+    actual_chapters.append(f"<div id=\"page0\">\n<h2 id=\"chapter-{i}\">" + chapter)
 
 # The last chapter contains both the last chapter and the appendix, split them
 chapter = chapters[-1]
-appendices = re.split(r'<div id="page0">\n<h1 id="appendix-\w+">', chapter)
+appendices = re.split(r'<div id="page0">\n<h2 id="appendix-\w+">', chapter)
 actual_chapters.pop()
 actual_chapters.append(
-    f"<div id=\"page0\">\n<h1 id=\"chapter-{len(chapters) - 1}\">" + appendices[0]
+    f"<div id=\"page0\">\n<h2 id=\"chapter-{len(chapters) - 1}\">" + appendices[0]
 )
 for i, appendix in enumerate(appendices):
     if i == 0:
         continue
-    actual_chapters.append(f"<div id=\"page0\">\n<h1 id=\"appendix-a\">" + appendix)
+    actual_chapters.append(f"<div id=\"page0\">\n<h2 id=\"appendix-a\">" + appendix)
 
 for chapter in actual_chapters:
-    name = re.search(r'<h1 id="([^"]*)">', chapter).group(1)
+    name = re.search(r'<h2 id="([^"]*)">', chapter).group(1)
     with open(f"output/{name}.html", "w") as f:
         f.write(styles + chapter)
 
@@ -205,13 +205,25 @@ with open("output/guide.html", "w") as f:
 
 total_size += os.stat("output/guide.html").st_size
 
-# markdown = md(html)
-
-# # Replace more than 2 newlines with 2 newlines
-# markdown = '\n'.join([line.strip() if len(line.strip()) == 0 else line for line in markdown.splitlines()])
-# markdown = re.sub(r'\n{3,}', '\n\n', markdown)
-
-# with open('output/guide.md', 'w') as f:
-#     f.write(markdown)
-
 print(f"Total size: {total_size / 1024} KB")
+
+# Convert each chapter to markdown
+for chapter in actual_chapters:
+    name = re.search(r'<h2 id="([^"]*)">', chapter).group(1)
+    markdown = md(chapter)
+
+    # Remove extra newlines
+    markdown = re.sub(r"\n{3,}", "\n\n", markdown)
+
+    # Convert the ==== syntax into h2
+    markdown = re.sub(r"(.+)\n-{2,}\n", r"## \1\n", markdown)
+
+    # Convert the markdown image syntax into html with width="100%"
+    markdown = re.sub(r"!\[.*\]\((.*)\)", r'![](file:///android_asset/survival_guide/\1)', markdown)
+
+    # Replace warnings and cautions with bold text
+    markdown = re.sub(r"#+ WARNING", r"**WARNING**", markdown)
+    markdown = re.sub(r"#+ CAUTION", r"**CAUTION**", markdown)
+
+    with open(f"output/{name}.md", "w") as f:
+        f.write(markdown)

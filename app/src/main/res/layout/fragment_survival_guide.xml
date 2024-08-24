@@ -14,17 +14,17 @@
         app:subtitle="Subtitle"
         app:title="Test" />
 
-    <WebView
-        android:id="@+id/web_view"
+    <ScrollView
+        android:id="@+id/guide_scroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/guide_list"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        <TextView
+            android:id="@+id/guide_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp" />
+    </ScrollView>
 
 </LinearLayout>
