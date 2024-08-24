@@ -1,9 +1,7 @@
 
-## Chapter 2: Survival Medicine
-
 Isolated persons require knowledge of many different survival skills to return to friendly forces. This chapter will discuss the psychology of survival, treatment for shock, and survival medicine practices.
 
-### SURVIVAL MEDICINE VERSUS TRADITIONAL MEDICINE
+## SURVIVAL MEDICINE VERSUS TRADITIONAL MEDICINE
 
 2\-1\. Excluding the enemy, medical related problems arising from combat and isolation pose the greatest threat to isolated personnel. Isolated personnel must understand the vast differences and transition of medical care that take place following combat, isolating events, and implementation of the isolated person's ISG/EPA. Isolated personnel must be able to perform fundamental survival medicine techniques throughout the duration of their isolation including during evasion, detention or captivity, and recovery. During combat operations, injured Soldiers follow Tactical Combat Casualty Care (TCCC) guidelines and protocols focused on the care of casualties in a combat or tactical environment at the point\-of\-injury. The TCCC program of instruction prepares Soldiers to provide self\-aid or buddy\-aid in the absence of a medical provider. Four transitions of medical care occur on the battlefield that includes isolation producing events.
 
@@ -654,7 +652,7 @@ IV \- intravenous DDT \- Dichlorodiphenyltrichloroethane
 
 - **Expressed juice**. These are liquids or saps squeezed from plant material and either applied to the wound or made into another medicine.
 
-### SURVIVAL MEDICINE PROPERTIES
+## SURVIVAL MEDICINE PROPERTIES
 
 2\-75\. Survival medicine is practiced by isolated personnel to aid in their survival during isolation. 
 
@@ -796,7 +794,7 @@ IV \- intravenous DDT \- Dichlorodiphenyltrichloroethane
 
 - The cattail stem has an amber or honey like substance that seeps from the stem. Use this secretion to treat small wounds and even toothaches, because it also has antiseptic properties.
 
-### POISONOUS PLANTS
+## POISONOUS PLANTS
 
 2\-84\. Isolated persons can benefit greatly from using plants as a food source, medical aid, and shelter building material; however, successful use of plants in a survival situation depends on positive identification. Knowing poisonous plants is as important as knowing edible plants. Knowing poisonous plants will help isolated personnel avoid sustaining injuries from them. Plants generally poison by\- 
 

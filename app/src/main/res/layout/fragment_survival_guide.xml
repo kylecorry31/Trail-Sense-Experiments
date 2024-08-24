@@ -14,17 +14,12 @@
         app:subtitle="Subtitle"
         app:title="Test" />
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/guide_scroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <TextView
-            android:id="@+id/guide_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp" />
-    </ScrollView>
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
 
 </LinearLayout>

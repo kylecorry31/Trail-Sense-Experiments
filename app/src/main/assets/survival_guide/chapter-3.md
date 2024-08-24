@@ -1,9 +1,7 @@
 
-## Chapter 3: Water
-
 This chapter discusses the criticality of water to the isolated person. It includes useful information concerning hydration, water sources and indicators, as well as ways of procuring and preparing potable water. 
 
-### HYDRATION CONSIDERATIONS
+## HYDRATION CONSIDERATIONS
 
 3\-1\. During isolation, the isolated person is faced with a constant dilemma \- what actions must be done and how to perform them with the least expenditure of effort or capability while maintaining personal security. Water is one of the isolated person's most urgent needs and the procurement of potable water is an essential task that must be performed in all operational environments.
 
@@ -25,7 +23,7 @@ This chapter discusses the criticality of water to the isolated person. It inclu
 
 3\-4\. When personnel are exposed to high temperatures, water loss from sweat increases to as much as 3\.5 quarts per hour. At this rate, body fluids are quickly depleted. Physical activity increases loss of water in two ways\-increased respiration and sweating due to excessive body heat. The time and effort required obtaining water and the decrease in the thirst response in cold weather favors the development of dehydration. An isolated person that is burned may lose up to 5 quarts of water per day. When ill, they will lose water through vomiting and diarrhea.
 
-### WATER SOURCES AND INDICATORS
+## WATER SOURCES AND INDICATORS
 
 3\-5\. Almost any environment has water present to some degree. Table 3\-1, on page 3\-2, lists possible sources of water in various environments. It also provides information on how to procure the water as well as how to make it potable.
 

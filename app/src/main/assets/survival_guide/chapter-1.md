@@ -1,9 +1,7 @@
 
-## Chapter 1: Overview
-
 Survival is the state of or fact of continuing to live or exist in spite of an isolating event. The end goal is to return to friendly forces with honor. This chapter discusses survival skills and situational understanding needed.
 
-### PERSONNEL RECOVERY
+## PERSONNEL RECOVERY
 
 1\-1\. Army personnel recovery is the military efforts taken to prepare for and execute the recovery and reintegration of isolated personnel. (FM 3\-50\) Personnel recovery aims to return isolated personnel to duty as well as to sustain morale, increase operational performance, collect information, and develop intelligence. Army forces work with unified action partners to recover individuals and groups who become isolated. Isolation refers to persons separated from their unit or in a situation where they must survive, evade, resist, or escape.
 
@@ -45,7 +43,7 @@ is the art and science of understanding a situation, envisioning a desired futur
 
 1\-8\. Navigation requirements for isolated personnel are met through planning and preparation efforts that focus on a combination of (Global Positioning System) GPS, map and compass, and field expedient techniques in a specific operational environment for the purpose of surviving, avoiding capture, and facilitating recovery. Navigational limitations and opportunities relating to terrain and illumination are identified and analyzed to subsequently organize, train and equip personnel to conduct precise movements to desired locations such as recovery areas, recovery sites and rally points to enable link\-up with recovery forces. Assess navigation needs during planning and preparation activities and integrated into organization, training, and equipping considerations by the commander and staff, unit recovery force, and the individual.
 
-### PSYCHOLOGY OF SURVIVAL
+## PSYCHOLOGY OF SURVIVAL
 
 1\-9\. It takes much more than the knowledge and skill to build shelters, gather food, build fires, and move without the aid of standard navigational devices, to survive isolation and possible detention or captivity. The key ingredient in any survival situation is the mental attitude of the isolated person involved. Having survival skills is important; having the will to survive is essential. Without a desire to survive, acquired skills serve little purpose and invaluable knowledge goes to waste.
 
@@ -111,7 +109,7 @@ is the art and science of understanding a situation, envisioning a desired futur
 
 1\-18\. Through military training and life experiences, begin today to prepare to cope with the rigors of survival. Isolated personnel capable of demonstrating their skills in training today will have the confidence in their ability to call upon if the need should arise. The goal of preparation is to build confidence in your ability to function despite your situation and fears. Failure to prepare yourself physically and psychologically to cope with isolation leads to reactions such as depression, carelessness, inattention, loss of confidence, and poor decision\-making. Remember that your life and the lives of others who depend on you are at stake.
 
-### SURVIVAL PATTERN
+## SURVIVAL PATTERN
 
 1\-19\. The survival pattern is a tool that enables isolated personnel to mitigate the effects of being an in an isolation situation. The survival pattern includes the manipulation of applicable sustenance, protection, navigation and survival medicine skills placed in order of priority. For example, in a cold environment, fire would be the first priority to get warm; followed by a shelter to protect from the cold, wind, and rain or snow; access to or the ability to procure potable water; traps or snares to get food; and survival medicine to maintain health. In all isolation situations, survival medicine has top priority.
 

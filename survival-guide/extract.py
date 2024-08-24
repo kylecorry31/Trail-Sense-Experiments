@@ -210,12 +210,17 @@ print(f"Total size: {total_size / 1024} KB")
 # Convert each chapter to markdown
 for chapter in actual_chapters:
     name = re.search(r'<h2 id="([^"]*)">', chapter).group(1)
+    # Remove the title
+    chapter = re.sub(r"<h2 id=\".*\">.*</h2>", "", chapter)
+    # Replace the h3 tags with h2 tags
+    chapter = re.sub(r"<h3>", "<h2>", chapter)
+    chapter = re.sub(r"</h3>", "</h2>", chapter)
     markdown = md(chapter)
 
     # Remove extra newlines
     markdown = re.sub(r"\n{3,}", "\n\n", markdown)
 
-    # Convert the ==== syntax into h2
+    # Convert the --- syntax into h2
     markdown = re.sub(r"(.+)\n-{2,}\n", r"## \1\n", markdown)
 
     # Convert the markdown image syntax into html with width="100%"

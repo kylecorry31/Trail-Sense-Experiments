@@ -93,3 +93,4 @@ survival-guide/output
 
 .kotlin/
 .idea/other.xml
+*.salive

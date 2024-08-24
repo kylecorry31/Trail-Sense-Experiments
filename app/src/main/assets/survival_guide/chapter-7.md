@@ -1,9 +1,7 @@
 
-## Chapter 7: Movement and Navigation
-
 As an isolated person, the ability to walk effectively is important to your recovery as well as to your safety and the conservation of personal energy and resources. Equally important is the ability to perform land navigation. The ability to determine location and navigate cross\-country significantly increases the isolated person's chances of recovery. Fundamental to land navigation is the acquisition of detailed knowledge about the specific operational environment to which you or your unit may be sent including climate, terrain, hydrology, topography, and prominent terrain features or landmarks. This chapter provides an overview on movement and navigation considerations, including the use of expedient navigation aids. 
 
-### DECISION TO STAY OR MOVE
+## DECISION TO STAY OR MOVE
 
 7\-1\. The decision to stay in place or move while isolated requires careful consideration. The reasons to stay in place or move are typically based upon the following:
 
@@ -266,7 +264,7 @@ Note. Wet the trousers before inflating to trap the air better; this may need to
 
 7\-20\. There are many other flotation devices that can be devised by using some imagination. Just make sure to test the device before trying to use it.
 
-### DETERMINE CARDINAL DIRECTION
+## DETERMINE CARDINAL DIRECTION
 
 7\-21\. Using the sun and shadows. The earth's relationship to the sun can help you to determine direction on earth. The sun always rises in the east and sets in the west, but not exactly due east or due west. There is also some seasonal variation. Shadows will move in the opposite direction of the sun. In the Northern Hemisphere, they will move from west to east, and will point north at noon. In the Southern Hemisphere, shadows will indicate south at noon. With practice, you can use shadows to determine both direction and time of day.
 
@@ -400,7 +398,7 @@ point through the bottom center of the container; this portion should be flush o
 
 7\-46\. Recognizing the differences between vegetation and moisture patterns on north\- and south\-facing slopes can aid in determining direction. In the northern hemisphere, north\-facing slopes receive less sun than south\-facing slopes and are therefore cooler and damper. In the summer, north\-facing slopes retain patches of snow. In the winter, trees and open areas on south\-facing slopes and the southern side of boulders and large rocks are the first to lose their snow. The ground snowpack is also shallower due to the warming effects of the sun. In the southern hemisphere, all of these effects will be the opposite.
 
-### NAVIGATION METHODS
+## NAVIGATION METHODS
 
 7\-47\. There are three primary means of navigation generally available to the isolated person: global positioning system (GPS), dead reckoning, and terrain association. .
 
@@ -578,7 +576,7 @@ Note. Use caution to ensure nothing (metal, mine and ore) in the area will alter
 
 - **Fills**. A fill is a manmade feature resulting from filling a low area, usually to form a level bed for a road or railroad track. Fills are shown on a map when they are at least 10 feet high, and they are drawn with a contour line along the fill line. This contour line extends the length of the filled area and has tick marks that point toward lower ground. If the map scale permits, the length of the fill tick marks are drawn to scale and extend from the base line of the fill symbol.
 
-### MEASURING DISTANCES
+## MEASURING DISTANCES
 
 7\-77\. There are different ways of measuring distances. Several techniques are included in this section.
 
@@ -654,7 +652,7 @@ Note. Use caution to ensure nothing (metal, mine and ore) in the area will alter
 
 - **Clothing**. Excess weight of clothing shortens the pace while the type of shoes affects traction and therefore pace length.
 
-### FIELD\-EXPEDIENT GUIDELINES FOR DISTANCE FROM A LANDMARK
+## FIELD\-EXPEDIENT GUIDELINES FOR DISTANCE FROM A LANDMARK
 
 7\-84\. Isolated persons must be able to estimate distance from an object to themselves. One way this can be done is by looking at trees. If they can see individual tree branches, they can estimate that they are about 0 to 0\.6 mile away from that landmark. Individual trees are about 1 to 3 kilometers away. If isolated persons view the trees as a sort of shag\-carpet look, the landmark would be about 3 to 5 kilometers away. A smooth looking carpet appearance is about 5 to 7 kilometers away. A bluish tint or haze in the distance indicates the landmark is about 7 to 10 kilometers away.
 

@@ -1,9 +1,7 @@
 
-## Chapter 8: Survival Equipment
-
 This chapter discusses the employment and maintenance of survival equipment and construction of field expedient weapons. Weapons serve a dual purpose. They are used to collect and prepare food and to provide for self\-defense. 
 
-### MAINTAINING EQUIPMENT
+## MAINTAINING EQUIPMENT
 
 8\-1\. Temperature extremes, both hot or cold, are stressful on equipment and can impede their use. For example, electronics require batteries, which have a limited amount of stored energy. Radios, GPSs, flashlights, cell phones, beacons, and blue\-force trackers need battery power to function. If exposed to temperature extremes, a battery's power can be degraded and internal parts can become damaged. This could leave isolated persons stranded during critical times when the equipment in needed. Extreme heat can cause batteries to overheat and potentially explode or degrade the stored\-up energy. Batteries should be kept out of direct sunlight and away from the open flame of any fire.
 
@@ -21,7 +19,7 @@ This chapter discusses the employment and maintenance of survival equipment and 
 
 8\-6\. To use the glue, heat the glue and apply it to the surface of the project with a stick. Heating the project's surface before gluing or repairing the joint of the project increases the effectiveness and strength of the glue joint.
 
-### FIELD\-EXPEDIENT WEAPONS
+## FIELD\-EXPEDIENT WEAPONS
 
 8\-7\. In survival situations, you may have to fashion any number and type of field\-expedient tools and equipment to survive
 
@@ -173,7 +171,7 @@ or plunge it deep under the coals in the ashes, being careful not to burn or sco
 
 8\-37\. A sapp is made by filling a sock part way with rocks or other heavy material (metal, batteries, lock, etc.). Use the Sapp like a weighted club.
 
-### CORDAGE AND LASHING
+## CORDAGE AND LASHING
 
 8\-38\. Many materials are strong enough to use as cordage and lashing, and a number of natural and manmade materials are available in a survival situation. For example, you can make a cotton web belt much more useful by unraveling it. You can then use the string for other purposes such as fishing line, thread for sewing, and lashing. Isolated persons can also use several strands of parachute cord and twist or braid them together to make a rope (see figure 8\-8 on page 8\-10\). Sheets are used in the same fashion. The parachute cord can be broken down into its components of the outer cover and the inner core strands for other purposes such as fishing line, thread for sewing, and lashing.
 

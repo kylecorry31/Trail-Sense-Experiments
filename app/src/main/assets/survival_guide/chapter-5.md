@@ -1,9 +1,7 @@
 
-## Chapter 5: Fire
-
 This chapter discusses uses and principles of fire. It also describes how to construct a fire through different phases and using different construction methods to meet specific needs. The chapter closes with an in\-depth discussion on fire\-starting using manmade and primitive methods. 
 
-### FIRE BASICS
+## FIRE BASICS
 
 5\-1\. A properly constructed and utilized fire is one of the best tools an isolated person has. The use of fire supports several different survival needs and provides many other benefits. Fire\-
 
@@ -89,7 +87,7 @@ This chapter discusses uses and principles of fire. It also describes how to con
 
 **Figure 5\-2\. Types of firewalls** 
 
-### BUILDING A FIRE
+## BUILDING A FIRE
 
 5\-8\. Once the fire site is selected and prepared, the fire\-building process can begin. The first step is to procure a base and a brace (see figure 5\-3 on page 5\-4\) which are used to initially establish and control the fire. The base is a flat piece of material, usually wood or a nonporous rock (porous rocks contain water and, when heated, can explode). The base is used to keep moisture susceptible tinder and kindling off the wet ground and provides a clear area to skillfully ignite tinder. The brace is employed across the base to help control oxygen into either the tinder, kindling, or fuel being worked. It is about the size of a person's forearm. A broken branch can typically be found and employed as a brace.
 
@@ -245,7 +243,7 @@ makes them more difficult to break and split into usable pieces than softwood. S
 
 When leaving an area after having a fire, ensure that the ground under where the fire was built is cool to the touch. 
 
-### FIRE STARTING TECHNIQUES
+## FIRE STARTING TECHNIQUES
 
 5\-32\. Fires are started from the upwind side to protect the fragile fire\-starting heat source. Several different techniques can be used to ignite tinder. These techniques support either modern or primitive methods. Isolated persons determine the best technique to use after analyzing issued and natural resources available to start the fire. While primitive methods allow for greater flexibility since they can be improvised from the natural environment, they generally require more skill and time to execute. Modern methods are the quickest and easiest method to start a fire, but they can only start a certain number of fires until the resource is exhausted. However, some modern methods, such as a metal match, can be used hundreds to thousands of times over depending upon the skill of the user.
 

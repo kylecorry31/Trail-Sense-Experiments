@@ -1,9 +1,7 @@
 
-## Appendix A: Survival Knots and Rope
-
 To be able to construct shelters, traps and snares, weapons and tools, and operate personnel recovery devices and equipment the isolated person should have a basic knowledge of ropes and knots and some of the terminology used with them. 
 
-### ROPE TERMINOLOGY
+## ROPE TERMINOLOGY
 
 A\-1\. The following information is general terminology used for ropes and knots (see figure A\-1, on page A2\):
 
@@ -81,7 +79,7 @@ A\-6\. Use the figure\-eight knot to form a larger knot than would be formed by 
 
 ![](file:///android_asset/survival_guide/122.webp)
 
-### KNOTS FOR JOINING ROPE
+## KNOTS FOR JOINING ROPE
 
 A\-7\. When isolated persons require rope longer than the individual pieces they are equipped with or have improvised, they securely tie multiple ropes together using knots designed for adjoining rope of equal and unequal diameters in wet and dry conditions. Knots for joining two ropes fall into the following categories:
 
@@ -117,7 +115,7 @@ A\-11\. The double sheet bend works better than the single sheet bend for joinin
 
 ![](file:///android_asset/survival_guide/125.webp)
 
-### KNOTS FOR MAKING LOOPS
+## KNOTS FOR MAKING LOOPS
 
 A\-12\. Knots for making loops fall into the following categories:
 
@@ -237,7 +235,7 @@ A\-26\. This knot ties a short rope around a longer rope (for example, a sling r
 
 ![](file:///android_asset/survival_guide/135.webp)
 
-### LASHINGS
+## LASHINGS
 
 A\-27\. A lashing is as rope, wire, or chain used for binding, wrapping, or fastening. Numerous items require lashings for construction; for example, shelters, equipment racks, and smoke generators. The following three types of lashings are discussed in this appendix:
 
@@ -271,7 +269,7 @@ A\-30\. Shear lashing is used for lashing two or more poles in a series. The des
 
 ![](file:///android_asset/survival_guide/138.webp)
 
-### ROPE CONSTRUCTION
+## ROPE CONSTRUCTION
 
 A\-31\. There are two basic types of rope to use in an isolation situation\-natural fiber ropes and manmade fiber ropes. Both types have different strengths and weaknesses. Isolated persons should know as much about the properties of rope as they can. This will allow them to use or, in some cases, improvise ropes of their own; creating the right tool for the task that will keep from wasting time, energy, and effort.
 
@@ -389,7 +387,7 @@ A\-48\. At this point, slip the running end through the bight of the cord. The s
 
 ## Glossary
 
-### SECTION I \- ACRONYMS AND ABBREVIATIONS
+## SECTION I \- ACRONYMS AND ABBREVIATIONS
 
 **ATP** Army tactics publication
 
@@ -421,7 +419,7 @@ A\-48\. At this point, slip the running end through the bight of the cord. The s
 
 **U.S.** United States
 
-### SECTION II \- TERMS
+## SECTION II \- TERMS
 
 **Army personnel recovery** The military efforts taken to prepare for and execute the recovery and reintegration of isolated personnel. (FM 3\-50\)
 

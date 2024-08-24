@@ -1,9 +1,7 @@
 
-## Chapter 4: Food
-
 This chapter discusses one of the isolated person's most urgent requirements. The isolated person must remember that the three essentials of survival\-water, food, and shelter\-are prioritized according to their estimate of the situation. We can live for weeks without food but it may take days or weeks to determine what is safe to eat and to trap animals in the area. Therefore, you need to begin food gathering in the earliest stages of isolation.
 
-### FOOD CONSIDERATIONS
+## FOOD CONSIDERATIONS
 
 4\-1\. Although you can live several weeks without food, you need an adequate amount to stay healthy. Without food, your mental and physical capabilities will deteriorate rapidly and you will become weak. Food provides energy and replenishes the substances that your body burns. Food provides vitamins, minerals, salts, and other elements essential to good health. Possibly more important, it helps morale.
 
@@ -91,7 +89,7 @@ This chapter discusses one of the isolated person's most urgent requirements. Th
 
 Note. There is less work and less wear on cutting implements if the ribs are broken first, then the breaks are cut.
 
-### BASIC COOKING AND PRESERVATION METHODS
+## BASIC COOKING AND PRESERVATION METHODS
 
 4\-23\. Fully cook wild game, large insects, freshwater fish, clams, mussels, snails and crawfish to kill any internal parasites. Mince mussels and large snails to make them tender for consumption. Cooking these items will also improve the taste and, in some cases, allow the isolated person to stretch out how much food they have (for example, turning a small rabbit into a large stew). Cooking will also slow the decomposition of food but will not eliminate it.
 
@@ -147,7 +145,7 @@ Note. There is less work and less wear on cutting implements if the ribs are bro
 
 4\-37\. Frying is the least favorable method of preparing food. Nearly all of the natural juices are cooked out of the meat, which tends to make it tough, and some of the meat's nutritional value will be destroyed. Frying can be done on any nonporous surface which can be heated. Examples are unpainted metal from an aircraft, vehicle parts, large seashells, flat rocks, and some survival kits.
 
-### PRESERVING FOOD
+## PRESERVING FOOD
 
 4\-38\. Preserving food is very important for isolated persons. Food, especially meat, has a tendency to spoil within a short period of time, unless it is preserved. There are many ways to preserve food including cooking, refrigeration, freezing, and dehydration.
 
@@ -179,7 +177,7 @@ Note. There is less work and less wear on cutting implements if the ribs are bro
 
 4\-44\. If the situation allows, the isolated person needs to gather and preserve more plant foods than can be eaten, preserve excess in the same manner as animal foods. Dry plants and fruits by wind, air, sun, or fire, with or without smoke. Any combination of these methods will remove moisture. If the plant part is large, such as tubers, it should be sliced and then dried. Some type of protection may be necessary to prevent consumption or contamination by insects. Carry extra fruits or berries by wrapping them in leaves or moss.
 
-### PLANTS
+## PLANTS
 
 4\-45\. If personnel enter into an isolating event with some basic knowledge and information, they will be able to supplement or totally survive off plant life in the area if it is abundant and available. Plants are valuable sources of food because they are widely available, easily procured and, in the proper combinations, can meet all nutritional needs. Plants provide carbohydrates, which provide the body energy and calories. Carbohydrates keep weight and energy up and include important starches and sugars. Many types of vitamins and minerals can be found in different varieties of plants and can provide the crucial nutrients that the body needs to remain healthy and disease free.
 
@@ -425,7 +423,7 @@ Test all parts of the plant for edibility, as some plants have both edible and i
 
 - Desert amaranth (amaranths palmer).
 
-### MOST COMMON GLOBAL PLANTS TO PROCURE
+## MOST COMMON GLOBAL PLANTS TO PROCURE
 
 4\-64\. **Cattail**. Underground stems (rhizomes) are high in starch and can be gathered year round. They can be eaten raw by chewing the central starchy core after the spongy surrounding tissue is removed. When boiled the entire rhizome can be eaten. Young shoots, green flowers, yellow pollen and the white inner leaves of immature stems in spring and early summer are also provide nutrition to the isolated person.
 
@@ -673,7 +671,7 @@ Note. Use caution when checking this trap\-it is an excellent hiding place for s
 
 ![](file:///android_asset/survival_guide/38.webp)
 
-### KILLING DEVICES
+## KILLING DEVICES
 
 4\-109\. The rabbit stick, the spear, the bow and arrow, and the sling are several types of killing devices constructed to capture small game to aid in survival.
 
@@ -689,7 +687,7 @@ Note. Use caution when checking this trap\-it is an excellent hiding place for s
 
 4\-112\. A sling can be made by tying two pieces of cordage, each about 24 inches long, at opposite ends of a palm\-sized piece of leather or cloth. Place a rock in the cloth, wrap one cord around the middle finger, and hold it in the palm. Hold the other cord between the forefingers and thumb. To throw the rock, spin the sling several times in a circle and release the cord between the thumb and forefinger. The sling is very effective against small game, but proficiency with the sling requires practice.
 
-### BUTCHERING MAMMALS
+## BUTCHERING MAMMALS
 
 4\-113\. Once the animal is skinned, break it down into usable\-size pieces. This will allow more options for transporting, cooking, and preserving. Butchering involves removing the muscle tissue from the skeletal structure of the animal. Trim off the connective tissue, trim off the fat (save for consumption), and cut the flesh into smaller pieces similar to what would be seen in a butcher shop. The meat can be cut into steaks, roasts, stew meat cubes, and thin slices for drying and smoking.
 
@@ -905,7 +903,7 @@ toxin. Also avoid the hawksbill turtle found in the Atlantic Ocean, because of i
 
 **Figure 4\-32b. Fish poisoning plants**
 
-### PREPARING FISH FOR CONSUMPTION
+## PREPARING FISH FOR CONSUMPTION
 
 4\-164\. Isolated persons must know how to prepare fish and game for cooking and storage in a survival situation. Improper cleaning or storage can result in inedible fish or game. Do not eat fish that appears spoiled. Cooking does not ensure that spoiled fish will be edible. Signs of spoilage include\-
 

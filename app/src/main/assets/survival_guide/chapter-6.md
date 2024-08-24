@@ -1,9 +1,7 @@
 
-## Chapter 6: Shelter and Clothing
-
 A shelter can protect you from the sun, insects, wind, rain, snow, hot or cold temperatures, and enemy observation. It can give you a feeling of wellbeing and help you maintain your will to survive. In some areas, your need for shelter may take precedence over your need for food and possibly even your need for water. For example, prolonged exposure to cold can cause excessive fatigue and weakness.This chapter discusses clothing and both manmade and natural shelters. 
 
-### PRIMARY SHELTER
+## PRIMARY SHELTER
 
 6\-1\. Your primary shelter in a survival situation will be your uniform. This point is true regardless of whether you are in a hot, cold, tropical, desert, or arctic situation. For your uniform to protect you, it must be in as good a condition as possible and be worn properly.
 
@@ -35,7 +33,7 @@ A shelter can protect you from the sun, insects, wind, rain, snow, hot or cold t
 
 - **Repair**. Repair any damaged clothing before tears and holes become too large to patch or sew. Patches can be made from cloth, tape, and other materials. Use a sewing kit, improvising one if needed. Sewing kits can be made from such items as bones, plant fibers, parachute cord, and large thorns.
 
-### SHELTER CONSIDERATIONS
+## SHELTER CONSIDERATIONS
 
 6\-8\. Shelter is anything that provides protection from environmental hazards. The environment influences shelter site selection and factors, which isolated personnel must consider before constructing an adequate shelter. Depending on the environmental conditions, shelter may be the isolated person's number one priority. They can take advantage of natural occurring features or make a shelter from manmade and natural materials brought along or found in the environment. Isolated persons should consider the type of shelter, location, and time of day when looking to build a shelter. Isolated persons should also consider the location of shelter in relation to temperature, precipitation, and wind. They should consider the time and effort needed to build adequate shelter and protection from the elements. Some environments require shelter to be built off the ground, others will require more insulation, and still others will require the effective use of winds for cooling.
 
@@ -75,7 +73,7 @@ A shelter can protect you from the sun, insects, wind, rain, snow, hot or cold t
 
 6\-11\. Site preparation includes brushing away rocks and twigs from the sleeping area and cutting back overhanging vegetation. Look for loose rocks, dead limbs, coconuts, or other material that could fall on the shelter. Remember thick, brushy, low ground also harbors more insects. Inspect the site for venomous snakes, ticks, mites, scorpions, and stinging ants.
 
-### CONSTRUCTION METHODS
+## CONSTRUCTION METHODS
 
 6\-12\. General considerations for the construction of a shelter include the following\-
 
