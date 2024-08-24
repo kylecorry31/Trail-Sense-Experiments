@@ -4,6 +4,7 @@ import re
 import base64
 from PIL import Image
 import os
+import shutil
 
 
 def slugify(value):
@@ -23,6 +24,9 @@ def slugify(value):
 
 # https://armypubs.army.mil/epubs/DR_pubs/DR_a/pdf/web/ARN12086_ATP%203-50x21%20FINAL%20WEB%202.pdf
 doc = pymupdf.open("ARN12086_ATP 3-50x21 FINAL WEB 2.pdf")
+
+shutil.rmtree("output", ignore_errors=True)
+
 if not os.path.exists("output"):
     os.mkdir("output")
 
@@ -147,8 +151,7 @@ html = re.sub(r"<div[^>]*>\s*</div>", "", html)
 # TODO: Generate a table of contents with links to each section
 # TODO: Delete images that aren't in the PDF
 
-html = (
-    """<head><style>
+styles = """<head><style>
 html {
     padding: 4px;
     background-color: transparent;
@@ -169,8 +172,33 @@ div {
     box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 </style></head>"""
-    + html
+
+# Split by chapter
+actual_chapters = []
+chapters = re.split(r'<div id="page0">\n<h1 id="chapter-\d+">', html)
+for i, chapter in enumerate(chapters):
+    if i == 0:
+        continue
+    actual_chapters.append(f"<div id=\"page0\">\n<h1 id=\"chapter-{i}\">" + chapter)
+
+# The last chapter contains both the last chapter and the appendix, split them
+chapter = chapters[-1]
+appendices = re.split(r'<div id="page0">\n<h1 id="appendix-\w+">', chapter)
+actual_chapters.pop()
+actual_chapters.append(
+    f"<div id=\"page0\">\n<h1 id=\"chapter-{len(chapters) - 1}\">" + appendices[0]
 )
+for i, appendix in enumerate(appendices):
+    if i == 0:
+        continue
+    actual_chapters.append(f"<div id=\"page0\">\n<h1 id=\"appendix-a\">" + appendix)
+
+for chapter in actual_chapters:
+    name = re.search(r'<h1 id="([^"]*)">', chapter).group(1)
+    with open(f"output/{name}.html", "w") as f:
+        f.write(styles + chapter)
+
+html = styles + html
 
 with open("output/guide.html", "w") as f:
     f.write(html)
